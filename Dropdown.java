@@ -20,9 +20,9 @@ public class Dropdown {
         driver.get("http://www.spicejet.com");
         driver.manage().window().maximize();
 
-  //      Select s = new Select(driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")));
-//        Select s1 = new Select(driver.findElement(By.id("ctl00_mainContent_ddl_Child")));
-//        Select  s2= new Select(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
+       Select s = new Select(driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")));
+       Select s1 = new Select(driver.findElement(By.id("ctl00_mainContent_ddl_Child")));
+       Select  s2= new Select(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")));
         driver.findElement(By.xpath("//*[@id=\"ctl00_mainContent_ddl_originStation1_CTXT\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"dropdownGroup1\"]/div/ul[1]/li[1]/a")).click();
         driver.findElement(By.xpath("(//*[@id=\"dropdownGroup1\"]/div/ul[1]/li[1]/a)[2]")).click();
